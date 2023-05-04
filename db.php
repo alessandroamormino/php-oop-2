@@ -12,9 +12,9 @@ $foods = [
 $games = [
   new Game('Kong Squeakair', './imgs/pallina_cani.jpg', 'cane', 'Kong', 4.55, 9999998887, 150, 15, 'Giallo', 'Tessuto', 'È una pallina da tennis e basta'),
   new Game('Castello Tiragraffi', './imgs/tiragraffi_gatti.jpg', 'gatto', 'Amazon Brand', 80.99, 5432226667, 8, 20, 'Grigio', 'Tessuto', 'È un castello con dei tiragraffi'),
-  new Game('Topolino', './imgs/topolino.jpg', 'gatto', 'Trixie', 14.99, 4444226667, 42, 5, 'Marrone', 'Tessuto', 'È un topolino'),
+  new Game('Topolino', './imgs/topolino.jpg', 'gatto', 'Trixie', 14.99, 4444226667, 42, 5, 'Marrone', 'Tessuto', 'È un topolino semplicissimo'),
   new Game('Osso Cani', './imgs/osso.jpg', 'cane', 'Kong', 17.00, 8887770001, 33, 0, 'Rosso', 'Plastica', 'È un osso per cani'),
-  new Game('Bottle Buddy', './imgs/bottiglia_cani.jpg', 'cane', 'Karlie', 8.50, 9293736451, 13, 10, 'Grigio/Azzurro', 'Tessuto e Plastica', 'È un peluche per cani'),
+  new Game('Bottle Buddy', './imgs/bottiglia_cani.jpg', 'cane', 'Karlie', 8.50, 9293736451, 13, 10, 'Grigio/Azzurro', 'Tessuto', 'È un peluche per cani'),
 ];
 
 $kennels = [

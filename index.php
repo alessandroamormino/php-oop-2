@@ -64,6 +64,7 @@ require_once './db.php';
                   <span>Sconto: <?= $product->getDiscount(); ?></span>
                   <span>Prezzo: <?= $product->getPrice(); ?></span>
                   <pre>Codice: <?= $product->getCode(); ?></pre>
+                  <button class="btn">Acquista</button>
                 </div>
               </div>
             <?php
@@ -103,6 +104,7 @@ require_once './db.php';
                   <span>Sconto: <?= $product->getDiscount(); ?></span>
                   <span>Prezzo: <?= $product->getPrice(); ?></span>
                   <pre>Codice: <?= $product->getCode(); ?></pre>
+                  <button class="btn">Acquista</button>
                 </div>
               </div>
             <?php
@@ -143,6 +145,7 @@ require_once './db.php';
                   <span>Sconto: <?= $product->getDiscount(); ?></span>
                   <span>Prezzo: <?= $product->getPrice(); ?></span>
                   <pre>Codice: <?= $product->getCode(); ?></pre>
+                  <button class="btn">Acquista</button>
                 </div>
               </div>
             <?php
