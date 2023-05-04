@@ -17,32 +17,31 @@ require_once './db.php';
   <title>PHP OOP 2</title>
 </head>
 <body>
-  <?php
-  foreach($kennels as $product){
-    echo $product->name;
-    echo '<br>';
-    echo $product->image;
-    echo '<br>';
-    echo $product->category;
-    echo '<br>';
-    echo $product->brand;
-    echo '<br>';
-    echo $product->getPrice();
-    echo '<br>';
-    echo $product->getCode();
-    echo '<br>';
-    echo $product->getQuantity();
-    echo '<br>';
-    echo $product->getDiscount();
-    echo '<br>';
-    echo $product->color;
-    echo '<br>';
-    echo $product->material;
-    echo '<br>';
-    echo $product->dimension;
-    echo '<br>';
-    echo $product->location;
-  }
-  ?>
+  <main>
+    <h1>Prodotti per animali</h1>
+    <div class="container">
+      <div class="food">
+        <h2>Cibi</h2>
+        <?php 
+          foreach($foods as $product){
+            ?>
+              <div class="card">
+                <h3><?= $product->name ?></h3>
+                <img src="<?= $product->image ?>" alt="<?= $product->name ?>">
+                <span><?= $product->category ?></span>
+                <span><?= $product->brand ?></span>
+                <span><?= $product->getPrice(); ?></span>
+                <span><?= $product->getCode(); ?></span>
+                <span><?= $product->getQuantity(); ?></span>
+                <span><?= $product->getDiscount(); ?></span>
+                <span><?= $product->type ?></span>
+                <span><?= $product->peculiarity ?></span>
+              </div>
+            <?php
+          }
+        ?>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
