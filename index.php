@@ -3,6 +3,7 @@
 require_once './Models/Product.php';
 require_once './Models/Food.php';
 require_once './Models/Game.php';
+require_once './Models/Kennel.php';
 
 require_once './db.php';
 
@@ -17,7 +18,7 @@ require_once './db.php';
 </head>
 <body>
   <?php
-  foreach($games as $product){
+  foreach($kennels as $product){
     echo $product->name;
     echo '<br>';
     echo $product->image;
@@ -38,7 +39,9 @@ require_once './db.php';
     echo '<br>';
     echo $product->material;
     echo '<br>';
-    echo $product->description;
+    echo $product->dimension;
+    echo '<br>';
+    echo $product->location;
   }
   ?>
 </body>

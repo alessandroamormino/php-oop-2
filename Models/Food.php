@@ -12,6 +12,6 @@ class Food extends Product{
 
     // memorizzo le proprietà della classe figlio (Food)
     $this->type = $type;
-    $this->peculiarity= $peculiarity;
+    $this->peculiarity = $peculiarity;
   }
 }

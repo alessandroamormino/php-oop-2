@@ -13,7 +13,7 @@ class Game extends Product{
 
     // memorizzo le proprietà della classe figlio (Food)
     $this->color = $color;
-    $this->material= $material;
-    $this->description= $description;
+    $this->material = $material;
+    $this->description = $description;
   }
 }

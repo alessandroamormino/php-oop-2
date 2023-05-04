@@ -12,3 +12,7 @@ $foods = [
 $games = [
   new Game('Pallina', './imgs/pallina.png', 'cani', 'brand02', 2.99, 999444888, 100, 10, 'gialla', 'tessuto', 'è una pallina da tennis e basta'),
 ];
+
+$kennels = [
+  new Kennel('Cuccia per cani', './imgs/cuccia.png', 'cani', 'brand03', 149.99, 8887776663, 4, 20, 'marrone', 'legno', '200x200', 'esterni'),
+];
