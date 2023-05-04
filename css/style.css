@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Reset */
+
+/* Assets */
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Main */
+
+.food{
+  padding: 2em 0;
+}
+
+h2{
+  padding: 1em 0;
+}
+
+.card{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .5em;
+  /* flex */
+
+  width: calc(100% / 5 - .5em / 5 * 4);
+
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card .head{
+  padding: 1em;
+}
+
+.card .info{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .3em;
+  /* flex */
+  padding: 1em;
+
+  background-color: #F8F8F8;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+

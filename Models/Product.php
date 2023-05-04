@@ -26,7 +26,7 @@ class Product {
 
   // creo dei getter per restituirmi poi le proprietà private
   public function getPrice(){
-    return $this->price;
+    return "{$this->price}€";
   }
 
   public function getCode(){
@@ -38,6 +38,6 @@ class Product {
   }
 
   public function getDiscount(){
-    return $this->discount;
+    return "{$this->discount}%";
   }
 }
