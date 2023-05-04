@@ -9,19 +9,19 @@ class Product {
   private $price;
   private $code;
   private $quantity;
-  private $discount;
+  private $discount = 0;
 
   // costruttore
-  function __construct(string $name, string $image, string $category, float $price, int $code, int $quantity){
+  function __construct(string $name, string $image, string $category, string $brand, float $price, int $code, int $quantity, int $discount){
     // memorizzo il contenuto delle proprietà nella classe
     $this->name = $name;
     $this->image = $image;
     $this->category = $category;
+    $this->brand = $brand;
     $this->price = $price;
     $this->code = $code;
     $this->quantity = $quantity;
-
-    $this->setDiscount();
+    $this->discount = $discount;
   }
 
   // creo dei getter per restituirmi poi le proprietà private
@@ -35,15 +35,6 @@ class Product {
 
   public function getQuantity(){
     return $this->quantity;
-  }
-
-  // creo un setter per il discount con un controllo
-  public function setDiscount(){
-    if($this->discount = null){
-      $this->discount = 0;
-    } else {
-      $this->discount;
-    }
   }
 
   public function getDiscount(){

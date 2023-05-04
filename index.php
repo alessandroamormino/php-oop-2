@@ -1,3 +1,10 @@
+<?php 
+// importo le classi e il db
+require_once './Models/Product.php';
+require_once './Models/Food.php';
+require_once './db.php';
+
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -7,6 +14,28 @@
   <title>PHP OOP 2</title>
 </head>
 <body>
-  
+  <?php
+  foreach($foods as $product){
+    echo $product->name;
+    echo '<br>';
+    echo $product->image;
+    echo '<br>';
+    echo $product->category;
+    echo '<br>';
+    echo $product->brand;
+    echo '<br>';
+    echo $product->getPrice();
+    echo '<br>';
+    echo $product->getCode();
+    echo '<br>';
+    echo $product->getQuantity();
+    echo '<br>';
+    echo $product->getDiscount();
+    echo '<br>';
+    echo $product->type;
+    echo '<br>';
+    echo $product->peculiarity;
+  }
+  ?>
 </body>
 </html>
