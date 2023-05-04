@@ -105,6 +105,46 @@ require_once './db.php';
           }
         ?>
       </div>
+      <h2>Cucce</h2>
+      <div class="row kennel">
+        <?php 
+          foreach($kennels as $product){
+            ?>
+              <div class="card">
+                <div class="head">
+                  <h3><?= $product->name ?></h3>
+                  <img src="<?= $product->image ?>" alt="<?= $product->name ?>">
+                </div>
+                <div class="info">
+                  <span>
+                    Categoria: 
+                    <?php 
+                      if($product->category == 'gatto'){
+                        ?>
+                        <i class="fa-solid fa-cat"></i>
+                        <?php
+                      } elseif($product->category == 'cane') {
+                        ?>
+                        <i class="fa-solid fa-dog"></i>
+                        <?php
+                      }
+                    ?>
+                  </span>
+                  <span>Marca: <?= $product->brand ?></span>
+                  <span>Color: <?= $product->color ?></span>
+                  <span>Materiale: <?= $product->material ?></span>
+                  <span>Dimensioni: <?= $product->dimension ?></span>
+                  <span>Ambiente: <?= $product->location ?></span>
+                  <span>Disponibilità: <?= $product->getQuantity(); ?></span>
+                  <span>Sconto: <?= $product->getDiscount(); ?></span>
+                  <span>Prezzo: <?= $product->getPrice(); ?></span>
+                  <pre>Codice: <?= $product->getCode(); ?></pre>
+                </div>
+              </div>
+            <?php
+          }
+        ?>
+      </div>
     </div>
   </main>
 </body>

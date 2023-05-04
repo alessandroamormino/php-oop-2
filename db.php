@@ -18,5 +18,10 @@ $games = [
 ];
 
 $kennels = [
-  new Kennel('Cuccia per cani', './imgs/cuccia.png', 'cane', 'brand03', 149.99, 8887776663, 4, 20, 'marrone', 'legno', '200x200', 'esterni'),
+  new Kennel('Cuccia per cani', './imgs/cuccia_cane1.jpg', 'cane', 'PerilCane', 329.99, 2342343456, 10, 15, 'Marrone/Verde', 'Legno', '300x200', 'Esterno'),
+  new Kennel('Charles 50 Ferplast', './imgs/cuccia_cane2.jpg', 'cane', 'Charles', 67.50, 8768766542, 20, 10, 'Grigio', 'Tessuto', '200x200', 'Interno'),
+  new Kennel('Vanasa Gatti', './imgs/cuccia_gatti1.jpg', 'gatto', 'Vanasa', 19.99, 9870980989, 99, 0, 'Grigio', 'Tessuto', '100x100', 'Interno'),
+  new Kennel('Vanasa Gatti', './imgs/cuccia_gatti1.jpg', 'gatto', 'CinaKennel', 23.99, 9833380989, 184, 7, 'Grigio/Bianco', 'Tessuto', '150x100', 'Interno'),
+  new Kennel('Retex Kennel', './imgs/cuccia_cane3.webp', 'cane', 'Retex Shop', 500.00, 8887779998, 4, 25, 'Grigio/Verde', 'Alluminio', '300x200', 'Esterno'),
+
 ];
