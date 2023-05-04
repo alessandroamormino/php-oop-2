@@ -2,6 +2,8 @@
 // importo le classi e il db
 require_once './Models/Product.php';
 require_once './Models/Food.php';
+require_once './Models/Game.php';
+
 require_once './db.php';
 
 ?>
@@ -15,7 +17,7 @@ require_once './db.php';
 </head>
 <body>
   <?php
-  foreach($foods as $product){
+  foreach($games as $product){
     echo $product->name;
     echo '<br>';
     echo $product->image;
@@ -32,9 +34,11 @@ require_once './db.php';
     echo '<br>';
     echo $product->getDiscount();
     echo '<br>';
-    echo $product->type;
+    echo $product->color;
     echo '<br>';
-    echo $product->peculiarity;
+    echo $product->material;
+    echo '<br>';
+    echo $product->description;
   }
   ?>
 </body>
