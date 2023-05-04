@@ -1,10 +1,6 @@
 <?php 
 // db nel quale istanzio le mie classi
 
-// $products = [
-//   new Product('Crocchette', './imgs/crocchette.png', 'gatti', 'royal canin', 6.96, 1234567890, 10, 30),
-// ];
-
 $foods = [
   new Food('Crocchette', './imgs/crocchette_cucciolo.jpg', 'gatto', 'Royal Canin', 9.99, 3453453450, 6, 10, 'Secco','Cuccioli'),
   new Food('Purina ONE Sterilized', './imgs/umido_gatti.jpg', 'gatto', 'Purina ONE', 4.99, 9998887776, 15, 10, 'Umido','Sterilizzati'),
@@ -14,9 +10,9 @@ $foods = [
 ];
 
 $games = [
-  new Game('Pallina', './imgs/pallina.png', 'cani', 'brand02', 2.99, 999444888, 100, 10, 'gialla', 'tessuto', 'è una pallina da tennis e basta'),
+  new Game('Kong Squeakair', './imgs/pallina_cani.jpg', 'cane', 'Kong', 4.55, 9999998887, 150, 15, 'Giallo', 'Tessuto', 'È una pallina da tennis e basta'),
 ];
 
 $kennels = [
-  new Kennel('Cuccia per cani', './imgs/cuccia.png', 'cani', 'brand03', 149.99, 8887776663, 4, 20, 'marrone', 'legno', '200x200', 'esterni'),
+  new Kennel('Cuccia per cani', './imgs/cuccia.png', 'cane', 'brand03', 149.99, 8887776663, 4, 20, 'marrone', 'legno', '200x200', 'esterni'),
 ];

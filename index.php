@@ -29,7 +29,7 @@ require_once './db.php';
     <div class="container">
       <h1>Prodotti per animali</h1>
       <h2>Cibi</h2>
-      <div class="food">
+      <div class="row food">
         <?php 
           foreach($foods as $product){
             ?>
@@ -56,6 +56,45 @@ require_once './db.php';
                   <span>Marca: <?= $product->brand ?></span>
                   <span>Tipologia: <?= $product->type ?></span>
                   <span>Caratteristica: <?= $product->peculiarity ?></span>
+                  <span>Disponibilità: <?= $product->getQuantity(); ?></span>
+                  <span>Sconto: <?= $product->getDiscount(); ?></span>
+                  <span>Prezzo: <?= $product->getPrice(); ?></span>
+                  <pre>Codice: <?= $product->getCode(); ?></pre>
+                </div>
+              </div>
+            <?php
+          }
+        ?>
+      </div>
+      <h2>Giochi</h2>
+      <div class="row games">
+        <?php 
+          foreach($games as $product){
+            ?>
+              <div class="card">
+                <div class="head">
+                  <h3><?= $product->name ?></h3>
+                  <img src="<?= $product->image ?>" alt="<?= $product->name ?>">
+                </div>
+                <div class="info">
+                  <span>
+                    Categoria: 
+                    <?php 
+                      if($product->category == 'gatto'){
+                        ?>
+                        <i class="fa-solid fa-cat"></i>
+                        <?php
+                      } elseif($product->category == 'cane') {
+                        ?>
+                        <i class="fa-solid fa-dog"></i>
+                        <?php
+                      }
+                    ?>
+                  </span>
+                  <span>Marca: <?= $product->brand ?></span>
+                  <span>Color: <?= $product->color ?></span>
+                  <span>Materiale: <?= $product->material ?></span>
+                  <span>Descrizione: <?= $product->description ?></span>
                   <span>Disponibilità: <?= $product->getQuantity(); ?></span>
                   <span>Sconto: <?= $product->getDiscount(); ?></span>
                   <span>Prezzo: <?= $product->getPrice(); ?></span>
