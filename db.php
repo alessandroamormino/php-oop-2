@@ -6,7 +6,7 @@
 // ];
 
 $foods = [
-  new Food('Cibo in scatola', './imgs/crocchette.png', 'gatto', 'brand01', 9.99, 3453453450, 6, 0, 'umido','cuccioli')
+  new Food('Crocchette', './imgs/crocchette_cucciolo.jpg', 'gatto', 'Royal Canin', 9.99, 3453453450, 6, 10, 'umido','cuccioli')
 ];
 
 $games = [

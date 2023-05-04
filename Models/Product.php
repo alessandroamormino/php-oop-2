@@ -22,9 +22,20 @@ class Product {
     $this->code = $code;
     $this->quantity = $quantity;
     $this->discount = $discount;
+
+    $this->setPrice();
   }
 
   // creo dei getter per restituirmi poi le proprietà private
+  public function setPrice(){
+    // return "{$this->price}€";
+    if($this->discount > 0){
+      $this->price = number_format($this->price - ($this->price * ($this->discount / 100)), 2, ",");
+    }else{
+      $this->price = $this->price;
+    }
+  }
+
   public function getPrice(){
     return "{$this->price}€";
   }
@@ -40,4 +51,5 @@ class Product {
   public function getDiscount(){
     return "{$this->discount}%";
   }
+
 }
