@@ -28,8 +28,8 @@ require_once './db.php';
   <main>
     <div class="container">
       <h1>Prodotti per animali</h1>
+      <h2>Cibi</h2>
       <div class="food">
-        <h2>Cibi</h2>
         <?php 
           foreach($foods as $product){
             ?>

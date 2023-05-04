@@ -19,11 +19,19 @@ body{
 /* Main */
 
 .food{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  /* flex */
   padding: 2em 0;
 }
 
 h2{
-  padding: 1em 0;
+  padding-top: 2em;
+}
+
+h3{
+  padding-bottom: 1em;
 }
 
 .card{
@@ -32,7 +40,7 @@ h2{
   gap: .5em;
   /* flex */
 
-  width: calc(100% / 5 - .5em / 5 * 4);
+  width: calc(100% / 5 - 1em / 5 * 4);
 
   border-radius: 10px;
   border: 1px solid #E5E5E5;
@@ -40,6 +48,8 @@ h2{
 
 .card img{
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .card .head{
