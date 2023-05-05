@@ -4,7 +4,7 @@
 class Product {
   public $name;
   public $image;
-  public $category;
+  protected $category;
   public $brand;
   private $price;
   private $code;
@@ -28,7 +28,6 @@ class Product {
 
   // creo dei getter per restituirmi poi le proprietà private
   public function setPrice(){
-    // return "{$this->price}€";
     if($this->discount > 0){
       $this->price = number_format($this->price - ($this->price * ($this->discount / 100)), 2, ",");
     }else{
@@ -50,6 +49,10 @@ class Product {
 
   public function getDiscount(){
     return "{$this->discount}%";
+  }
+
+  public function getCategory(){
+    return $this->category;
   }
 
 }

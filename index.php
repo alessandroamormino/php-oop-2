@@ -46,11 +46,11 @@ require_once './db.php';
                   <span>
                     Categoria: 
                     <?php 
-                      if($product->category == 'gatto'){
+                      if($product->getCategory() == 'gatto'){
                         ?>
                         <i class="fa-solid fa-cat"></i>
                         <?php
-                      } elseif($product->category == 'cane') {
+                      } elseif($product->getCategory() == 'cane') {
                         ?>
                         <i class="fa-solid fa-dog"></i>
                         <?php
@@ -86,11 +86,11 @@ require_once './db.php';
                   <span>
                     Categoria: 
                     <?php 
-                      if($product->category == 'gatto'){
+                      if($product->getCategory() == 'gatto'){
                         ?>
                         <i class="fa-solid fa-cat"></i>
                         <?php
-                      } elseif($product->category == 'cane') {
+                      } elseif($product->getCategory() == 'cane') {
                         ?>
                         <i class="fa-solid fa-dog"></i>
                         <?php
@@ -127,11 +127,11 @@ require_once './db.php';
                   <span>
                     Categoria: 
                     <?php 
-                      if($product->category == 'gatto'){
+                      if($product->getCategory() == 'gatto'){
                         ?>
                         <i class="fa-solid fa-cat"></i>
                         <?php
-                      } elseif($product->category == 'cane') {
+                      } elseif($product->getCategory() == 'cane') {
                         ?>
                         <i class="fa-solid fa-dog"></i>
                         <?php
@@ -145,7 +145,7 @@ require_once './db.php';
                   <span>Ambiente: <?= $product->location ?></span>
                   <span>Disponibilità: <?= $product->getQuantity(); ?></span>
                   <span>Sconto: <?= $product->getDiscount(); ?></span>
-                  <span>Prezzo: <?= $product->getPrice(); ?></span>
+                  
                   <pre>Codice: <?= $product->getCode(); ?></pre>
                   <button class="btn">Acquista</button>
                 </div>
