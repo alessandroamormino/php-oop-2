@@ -60,7 +60,15 @@ require_once './db.php';
                   <span>Marca: <?= $product->brand ?></span>
                   <span>Tipologia: <?= $product->type ?></span>
                   <span>Peso: <?= $product->getWeight() ?></span>
-                  <span>Caratteristica: <?= $product->peculiarity ?></span>
+                  <span>Caratteristica: 
+                    <?php
+                      try{
+                        echo $product->getPeculiarity();
+                      } catch (Exception $e){
+                        $e->getMessage();
+                      }
+                    ?>
+                  </span>
                   <span>Disponibilità: <?= $product->getQuantity(); ?></span>
                   <span>Sconto: <?= $product->getDiscount(); ?></span>
                   <span>Prezzo: <?= $product->getPrice(); ?></span>

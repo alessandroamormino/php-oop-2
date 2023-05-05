@@ -20,5 +20,15 @@ class Food extends Product{
     $this->type = $type;
     $this->peculiarity = $peculiarity;
     $this->weight = $weight;
+
+  } 
+
+  public function getPeculiarity(){
+    if(!$this->peculiarity = ''){
+      return $this->peculiarity;
+    }else {
+      throw new Exception('Devi inserire una caratteristica, esempio: per cuccioli, per sterilizzati');
+    }
   }
+
 }
