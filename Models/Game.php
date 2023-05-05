@@ -1,14 +1,14 @@
 <?php 
 // importo il trait
 require_once __DIR__ . '/../Trait/Weight.php';
+require_once __DIR__ . '/../Trait/Material.php';
 
 // definisco la classe Game
 
 class Game extends Product{
   public $color;
-  public $material;
+  use Material;
   public $description;
-
   // leggo il trait
   use Weight;
 

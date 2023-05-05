@@ -99,7 +99,7 @@ require_once './db.php';
                   </span>
                   <span>Marca: <?= $product->brand ?></span>
                   <span>Color: <?= $product->color ?></span>
-                  <span>Materiale: <?= $product->material ?></span>
+                  <span>Materiale: <?= $product->getMaterial() ?></span>
                   <span>Peso: <?= $product->getWeight() ?></span>
                   <span>Descrizione: <?= $product->description ?></span>
                   <span>Disponibilità: <?= $product->getQuantity(); ?></span>
@@ -140,7 +140,7 @@ require_once './db.php';
                   </span>
                   <span>Marca: <?= $product->brand ?></span>
                   <span>Color: <?= $product->color ?></span>
-                  <span>Materiale: <?= $product->material ?></span>
+                  <span>Materiale: <?= $product->getMaterial() ?></span>
                   <span>Dimensioni: <?= $product->dimension ?></span>
                   <span>Ambiente: <?= $product->location ?></span>
                   <span>Disponibilità: <?= $product->getQuantity(); ?></span>

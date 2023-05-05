@@ -1,9 +1,12 @@
-<?php 
+<?php
+// importo il trait
+require_once __DIR__ . '/../Trait/Material.php';
+
 // definisco la classe Kennel
 
 class Kennel extends Product{
   public $color;
-  public $material;
+  use Material;
   public $dimension;
   public $location;
 
